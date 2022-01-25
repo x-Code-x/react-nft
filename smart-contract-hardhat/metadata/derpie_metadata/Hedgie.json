@@ -1,0 +1,20 @@
+{
+  "name": "hedgie",
+  "description": "Whoopsie Derpies is an NFT art collection inspired by drawing animals for our twin toddlers whilst getting bumped around and receiving conflicting requests. The animals are cute and just a little bit derpy.",
+  "image": "ipfs://QmaCKe6gS3XodExFDRHuZQHdueSKBg2LaswqYAiYBr45Pp/Hedgie.png",
+  "background_color": "c2ffff",
+  "attributes": [
+    {
+      "trait_type": "animal",
+      "value": "hedgehog"
+    },
+    {
+      "trait_type": "preferred name",
+      "value": "hank"
+    },
+    {
+      "trait_type": "derpiness",
+      "value": 2
+    }
+  ]
+}

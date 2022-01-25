@@ -1,0 +1,20 @@
+{
+  "name": "lemur",
+  "description": "Whoopsie Derpies is an NFT art collection inspired by drawing animals for our twin toddlers whilst getting bumped around and receiving conflicting requests. The animals are cute and just a little bit derpy.",
+  "image": "ipfs://QmaCKe6gS3XodExFDRHuZQHdueSKBg2LaswqYAiYBr45Pp/Lemur.png",
+  "background_color": "ffc2cc",
+  "attributes": [
+    {
+      "trait_type": "animal",
+      "value": "lemur"
+    },
+    {
+      "trait_type": "preferred name",
+      "value": "lerkin"
+    },
+    {
+      "trait_type": "derpiness",
+      "value": 7
+    }
+  ]
+}
