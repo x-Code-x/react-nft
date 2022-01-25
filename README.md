@@ -8,7 +8,7 @@ A total of 500 Whoopsie Derpies can be minted on-chain. There are 20 unique anim
 
 The specific animal you mint is determined during the minting process, using Chainlink's VRF to introduce randomness.
 
-Front end currently deployed to netlify at https://whoopsiederpies.netlify.app/.
+Front end currently deployed to netlify at <a href="https://whoopsiederpies.netlify.app/" target="_blank">https://whoopsiederpies.netlify.app/</a>.
 
 Smart contract deployed to the Ethereum Rinkeby testnet at contract address 0xFae806Ef5fDadCBa0db4716228EC625d1FC64196. View verified contract at https://rinkeby.etherscan.io/address/0xFae806Ef5fDadCBa0db4716228EC625d1FC64196
 
