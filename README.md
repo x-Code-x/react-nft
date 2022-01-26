@@ -28,8 +28,9 @@ View minted Derpies collection at https://testnets.opensea.io/collection/whoopsi
 #### Frontend
 
 - React Framework for frontend build.
+- Bulma.io CSS framework
 - ethers.js library for interacting with Ethereum.
-- Error handling and notifications used to help the user navigate the wait-times associated with blockchains.
+- Error handling and notifications to help the user navigate the wait-times associated with blockchains and oracles.
 
 #### Smart Contract
 
@@ -38,7 +39,7 @@ View minted Derpies collection at https://testnets.opensea.io/collection/whoopsi
 - Inherits from OpenZeppelin's ERC721Enumerable and Ownable interfaces.
 - Inherits from Chainlink's VRFConsumerBase to obtain verifiable random numbers on-chain and assign a random animal with the result.
 - Metadata and images are stored on IPFS and pinned using Pinata.
-- Hardhat deveolopment environment used for compiling, testing, and deployment.
+- Hardhat development environment used for compiling, testing, and deployment.
 
 ### TODOS
 
