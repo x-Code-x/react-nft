@@ -1,7 +1,5 @@
 # Whoopsie Derpies NFT - Solidity, Hardhat, React
 
-This is an independent project to showcase familiarity with the Ethereum ecosystem, including Solidity, the Hardhat development environment, and oracles. The website frontend was developed using React.
-
 Whoopsie Derpies is an NFT art collection deployed to the Ethereum <strong>Rinkeby</strong> testnet. Inspired by drawing animals for our twin toddlers whilst getting bumped around and receiving conflicting requests. The animals are cute and just a little bit derpy.
 
 A total of 500 Whoopsie Derpies can be minted on-chain. There are 20 unique animals that are possible to mint: Beaver, Bunny, Cat, Cheetah, Elephant, Flamingo, Fox, Giraffe, Hedgehog, Horse, Lemur, Llama, Narwhal, Octopus, Orca, Pig, Rhino, Sandpiper, Shark, and Squirrel.
@@ -45,6 +43,8 @@ View minted Derpies collection at https://testnets.opensea.io/collection/whoopsi
 
 #### Frontend
 
+- [ ] break out functions into lib folder
+- [ ] add wallet connect functionality for mobile
 - [ ] Listen for `MintedDerpie` contract event in frontend `mintDerpie` function to know when the Chainlink VRF has responded with randomness. Currently I wait 5 minutes using frontend function `waitForChainlinkVRF` before attempting to show the user their newly minted Derpie.
 - [x] reduce image file sizes for faster loading.
 
@@ -100,9 +100,11 @@ cd frontend-react
 npm run start
 ```
 
-Make sure to use the correct `DERPIES_ADDRESS` variable in `App.js` for development:
+Make sure to import correct correct contract abi to `App.js` from `contracts/`
 
-- Comment out `DERPIES_ADDRESS = process.env.REACT_APP_DERPIES_ADDRESS_RINKEBY;`
+Make sure to use the correct `DERPIES_ADDRESS` variable in `constants.js` for development:
+
+- Comment out `const DERPIES_ADDRESS = process.env.REACT_APP_DERPIES_ADDRESS_RINKEBY;`
 - Uncomment `const DERPIES_ADDRESS = process.env.REACT_APP_DERPIES_ADDRESS_LOCALHOST;`
 
 # Deployment
@@ -123,10 +125,12 @@ npx hardhat run scripts/deploy_rinkeby.js --network rinkeby
 
 Front end currently deployed to netlify at https://whoopsiederpies.netlify.app/.
 
-Make sure to use the correct `DERPIES_ADDRESS` variable in `App.js` for deployment:
+Make sure to import correct correct contract abi to `App.js` from `contracts/`
+
+Make sure to use the correct `DERPIES_ADDRESS` variable in `constants.js` for deployment:
 
 - Comment out `const DERPIES_ADDRESS = process.env.REACT_APP_DERPIES_ADDRESS_LOCALHOST;`
-- Uncomment `DERPIES_ADDRESS = process.env.REACT_APP_DERPIES_ADDRESS_RINKEBY;`
+- Uncomment `const DERPIES_ADDRESS = process.env.REACT_APP_DERPIES_ADDRESS_RINKEBY;`
 
 Build the frontend for production with `npm run build`. Deploy the `build` folder.
 
