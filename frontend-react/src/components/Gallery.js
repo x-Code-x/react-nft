@@ -17,6 +17,7 @@ const Gallery = (props) => {
     userDerpieDetails,
     showGallery,
     setShowGallery,
+    errorMessageFetch,
     errorMessageGallery,
     setErrorMessageGallery,
   } = props;
@@ -46,6 +47,7 @@ const Gallery = (props) => {
         {errorMessageGallery !== null && (
           <ErrorMessage errorMessage={errorMessageGallery} setErrorMessage={setErrorMessageGallery} />
         )}
+        {errorMessageFetch && <p>Error fetching images from IPFS: error status {errorMessageFetch}</p>}
       </section>
     </div>
   );
