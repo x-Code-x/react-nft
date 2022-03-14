@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Mint from "./components/Mint";
 import Gallery from "./components/Gallery";
-import AccountChangedWarning from "./components/AccountChangedWarning"; // DELETE?
+import AccountChangedWarning from "./components/AccountChangedWarning";
 import RinkebyWarning from "./components/RinkebyWarning";
 import { DERPIES_ADDRESS, VRFCOORDINATORMOCK_ADDRESS_LOCALHOST, CHAINLINK_WAIT_TIME_MINUTES } from "./constants";
 
@@ -49,38 +49,6 @@ function App() {
   const [errorMessageGallery, setErrorMessageGallery] = useState(null);
   const [errorMessageFetch, setErrorMessageFetch] = useState(null);
   const [noMetaMaskDetectedError, setNoMetaMaskDetectedError] = useState(false);
-
-  useEffect(() => {
-    if (!window.ethereum) {
-      console.log("no metamask detected");
-      setNoMetaMaskDetectedError(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    // guard clause to prevent site from reloading when user is changing metamask settings when not connected.
-    if (connectedAccount === "not connected") return;
-    if (window.ethereum) {
-      window.ethereum.on("chainChanged", () => {
-        setChainChanged(true);
-        setTimeout(() => {
-          window.location.reload();
-        }, 2500);
-      });
-      window.ethereum.on("accountsChanged", () => {
-        setAccountChanged(true);
-        setTimeout(() => {
-          window.location.reload();
-        }, 2500);
-      });
-    }
-  });
-
-  function clearErrorMessages() {
-    setErrorMessageConnect(null);
-    setErrorMessageMint(null);
-    setErrorMessageGallery(null);
-  }
 
   async function connectWalletHandler() {
     clearErrorMessages();
@@ -205,6 +173,7 @@ function App() {
     setNewlyMintedDerpy(tokenId);
   }
 
+  // TODO - listen for emitted event instead
   async function waitForChainlinkVRF(waitTimeMilliseconds) {
     return new Promise((resolve) => {
       setTimeout(resolve, waitTimeMilliseconds);
@@ -220,6 +189,54 @@ function App() {
     const randNumTx = await vrfCoordinatorContract.callBackWithRandomness(requestId, 22, derpiesContract.address);
     await randNumTx.wait();
   }
+
+  function clearErrorMessages() {
+    setErrorMessageConnect(null);
+    setErrorMessageMint(null);
+    setErrorMessageGallery(null);
+  }
+
+  async function fetchMetadata(tokenUri) {
+    try {
+      const response = await fetch(tokenUri);
+
+      if (response.ok) {
+        return response.json();
+      } else {
+        setErrorMessageFetch(response.status);
+        return Promise.reject(response);
+      }
+    } catch (error) {
+      setErrorMessageFetch(error);
+    }
+  }
+
+  useEffect(() => {
+    if (!window.ethereum) {
+      console.log("no metamask detected");
+      setNoMetaMaskDetectedError(true);
+    }
+  }, []);
+
+  // listen for EIP-1193 events
+  useEffect(() => {
+    // guard clause to prevent site from reloading when user is changing metamask settings when not connected.
+    if (connectedAccount === "not connected") return;
+    if (window.ethereum) {
+      window.ethereum.on("chainChanged", () => {
+        setChainChanged(true);
+        setTimeout(() => {
+          window.location.reload();
+        }, 2500);
+      });
+      window.ethereum.on("accountsChanged", () => {
+        setAccountChanged(true);
+        setTimeout(() => {
+          window.location.reload();
+        }, 2500);
+      });
+    }
+  });
 
   useEffect(async () => {
     // isMountedMint guards against running this useEffect on page load.
@@ -242,21 +259,6 @@ function App() {
       isMountedMint.current = true;
     }
   }, [newlyMintedDerpie]);
-
-  async function fetchMetadata(tokenUri) {
-    try {
-      const response = await fetch(tokenUri);
-
-      if (response.ok) {
-        return response.json();
-      } else {
-        setErrorMessageFetch(response.status);
-        return Promise.reject(response);
-      }
-    } catch (error) {
-      setErrorMessageFetch(error);
-    }
-  }
 
   useEffect(() => {
     clearErrorMessages();

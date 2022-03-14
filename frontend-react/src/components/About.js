@@ -19,8 +19,6 @@ import Sandpiper from "../img/derpie_img/Sandpiper.png";
 import Shark from "../img/derpie_img/Shark.png";
 import Squirrel from "../img/derpie_img/Squirrel.png";
 
-import ErrorMessage from "./ErrorMessage";
-
 const About = ({ setSelectedTab }) => {
   function mintPageHandler() {
     setSelectedTab("Mint");

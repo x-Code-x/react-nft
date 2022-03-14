@@ -1,6 +1,6 @@
 import Countdown from "react-countdown";
 
-const MintProgressNotification = ({ mintWaitTimer, setSelectedTab, transactionHash, set }) => {
+const MintProgressNotification = ({ mintWaitTimer, setSelectedTab, transactionHash }) => {
   function galleryClickHandler() {
     setSelectedTab("Gallery");
     document.body.scrollTop = 0; // Safari
