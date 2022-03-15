@@ -16,11 +16,11 @@ const Navbar = (props) => {
   return (
     <>
       <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <figure className="image is-64x64 pl-3 is-flex is-align-items-center">
+        <div className="navbar-brand is-flex is-align-items-center">
+          <figure className="image is-64x64 custom-nav-img pl-3 is-flex is-align-items-center">
             <img className="" src={Logo} />
           </figure>
-          <a className="navbar-item shizuru is-size-3" onClick={logoClickHandler}>
+          <a className="navbar-item shizuru is-size-3 is-size-4-mobile" onClick={logoClickHandler}>
             <span className="">WhoopsieDerpies</span>
           </a>
 
@@ -40,13 +40,31 @@ const Navbar = (props) => {
 
         <div id="" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
           <div className="navbar-end">
-            <a className="navbar-item" onClick={() => setSelectedTab("About")}>
+            <a
+              className="navbar-item"
+              onClick={() => {
+                setSelectedTab("About");
+                setIsActive(false);
+              }}
+            >
               About
             </a>
-            <a className="navbar-item" onClick={() => setSelectedTab("Mint")}>
+            <a
+              className="navbar-item"
+              onClick={() => {
+                setSelectedTab("Mint");
+                setIsActive(false);
+              }}
+            >
               Mint
             </a>
-            <a className="navbar-item" onClick={() => setSelectedTab("Gallery")}>
+            <a
+              className="navbar-item"
+              onClick={() => {
+                setSelectedTab("Gallery");
+                setIsActive(false);
+              }}
+            >
               Your Derpies
             </a>
           </div>

@@ -11,8 +11,8 @@ import AccountChangedWarning from "./components/AccountChangedWarning";
 import RinkebyWarning from "./components/RinkebyWarning";
 import { DERPIES_ADDRESS, VRFCOORDINATORMOCK_ADDRESS_LOCALHOST, CHAINLINK_WAIT_TIME_MINUTES } from "./constants";
 
-import Derpies from "./contracts/localhost/Derpies.json"; // development
-// import Derpies from "./contracts/rinkeby/Derpies.json"; // deployment
+// import Derpies from "./contracts/localhost/Derpies.json"; // development
+import Derpies from "./contracts/rinkeby/Derpies.json"; // deployment
 import VRFCoordinatorMock from "./contracts/localhost/VRFCoordinatorMock.json";
 import ChainChangedWarning from "./components/ChainChangedWarning";
 
@@ -58,7 +58,7 @@ function App() {
       try {
         const [account] = await window.ethereum.request({ method: "eth_requestAccounts" });
         const network = window.ethereum.networkVersion;
-        console.log(`metamask connected with account: ${account} to network ID: ${network}`);
+        // console.log(`metamask connected with account: ${account} to network ID: ${network}`);
         setConnectedAccount(`${account.slice(0, 4)}...${account.slice(-4)}`);
         setConnectedNetwork(network);
         setIsConnected(true);
@@ -68,7 +68,7 @@ function App() {
           setRinkebyWarning(false);
         }
       } catch (error) {
-        console.log(`${error.code} ${error.message}`);
+        // console.log(`${error.code} ${error.message}`);
         setErrorMessageConnect(error);
       }
       setIsConnecting(false);
@@ -112,7 +112,7 @@ function App() {
         setGettingUserDerpies(false);
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       setErrorMessageGallery(error);
       setGettingUserDerpies(false);
     }
@@ -128,7 +128,7 @@ function App() {
         setMintingInProgress(false);
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       setMintingInProgress(false);
       setErrorMessageMint(error);
     }
@@ -157,7 +157,7 @@ function App() {
     setMintingInProgress(true);
 
     const mintTxReceipt = await mintTx.wait();
-    console.log(mintTxReceipt);
+    // console.log(mintTxReceipt);
     const requestId = mintTxReceipt.logs[3].topics[1];
     const tokenId = mintTxReceipt.events[3].topics[2];
 
@@ -167,7 +167,7 @@ function App() {
     }
 
     // Wait for chainlink vrf before requesting metadata
-    console.log("waiting for chainlink vrf");
+    // console.log("waiting for chainlink vrf");
     await waitForChainlinkVRF(CHAINLINK_WAIT_TIME_MINUTES - (Date.now() - startTimer));
 
     setNewlyMintedDerpy(tokenId);
@@ -213,7 +213,7 @@ function App() {
 
   useEffect(() => {
     if (!window.ethereum) {
-      console.log("no metamask detected");
+      // console.log("no metamask detected");
       setNoMetaMaskDetectedError(true);
     }
   }, []);

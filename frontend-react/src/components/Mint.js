@@ -32,14 +32,14 @@ const Mint = (props) => {
     <div className="background">
       <section className="section has-text-centered">
         <h1 className="shizuru pb-5">MINT</h1>
-        <h2 className="subtitle">
+        <h2 className="subtitle custom-mobile-subtitle">
           Mint a Derpie here! Each Derpie costs 0.01 <strong>test</strong> ETH + gas on <strong>Rinkeby</strong>.
         </h2>
-        <p>
+        <p className="custom-smaller-mobile-text">
           Make sure your wallet is connected to the Rinkeby Ethereum Testnet (network id: 4) and is funded with Rinkeby
           test ether.
         </p>
-        <p>
+        <p className="custom-smaller-mobile-text">
           You can get test ether from a faucet. Try this one:{" "}
           <a href="https://faucets.chain.link/rinkeby" target="_blank">
             https://faucets.chain.link/rinkeby

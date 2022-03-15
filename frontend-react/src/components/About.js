@@ -30,7 +30,7 @@ const About = ({ setSelectedTab }) => {
     <div className="background">
       <section className="section has-text-centered pb-0 container">
         <h1 className="shizuru pb-6">ABOUT</h1>
-        <h2 className="subtitle pb-6 mb-0">
+        <h2 className="subtitle pb-6 mb-0 custom-smaller-mobile-text">
           Whoopsie Derpies is an NFT art collection deployed to the Ethereum <strong>Rinkeby</strong> Testnet. Inspired
           by drawing animals for our twin toddlers whilst getting bumped around and receiving conflicting requests. The
           animals are cute and just a little bit derpy. View minted collection on{" "}
@@ -40,65 +40,65 @@ const About = ({ setSelectedTab }) => {
           .
         </h2>
 
-        <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6">
-          <figure className="image is-96x96 mr-2">
+        <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6 custom-mobile-margin">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Beaver} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Bunny} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Cat} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Cheetah} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Elephant} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Flamingo} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Fox} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Giraffe} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Hedgie} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Horse} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Lemur} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Llama} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Narwhal} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Octopus} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Orca} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Pig} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Rhino} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Sandpiper} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Shark} />
           </figure>
-          <figure className="image is-96x96 mr-2">
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Squirrel} />
           </figure>
         </div>
@@ -113,7 +113,7 @@ const About = ({ setSelectedTab }) => {
           </div>
           <div className="custom-about-text p-5">
             <h1 className="title">Development Details</h1>
-            <p className="pb-2">
+            <p className="pb-2 custom-smaller-mobile-text">
               This is an independent project to showcase familiarity with the Ethereum ecosystem, including Solidity,
               the Hardhat development environment, and oracles. The website frontend was developed using React. View the
               entire project code at this
@@ -127,11 +127,11 @@ const About = ({ setSelectedTab }) => {
               </a>
               .
             </p>
-            <p className="pb-2">
+            <p className="pb-2 custom-smaller-mobile-text">
               The Whoospie Derpies smart contract follows the ERC721 Non-Fungible Token Standard. Development details
               are as follows:
             </p>
-            <ul className="custom-details-list">
+            <ul className="custom-details-list custom-smaller-mobile-text">
               <li>Inherits from OpenZeppelin's ERC721Enumerable and Ownable interfaces.</li>
               <li>
                 Inherits from Chainlink's VRFConsumerBase to obtain verifiable random numbers on-chain and assign a
@@ -145,7 +145,7 @@ const About = ({ setSelectedTab }) => {
         <div className="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
           <div className="custom-about-text p-5">
             <h1 className="title">Derpies Details</h1>
-            <p className="pb-2">
+            <p className="pb-2 custom-smaller-mobile-text">
               A total of 500 Whoopsie Derpies can be minted on-chain. There are 20 unique animals that are possible to
               mint: Beaver, Bunny, Cat, Cheetah, Elephant, Flamingo, Fox, Giraffe, Hedgehog, Horse, Lemur, Llama,
               Narwhal, Octopus, Orca, Pig, Rhino, Sandpiper, Shark, and Squirrel.

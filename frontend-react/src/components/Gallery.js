@@ -25,7 +25,7 @@ const Gallery = (props) => {
     <div className="background">
       <section className="section has-text-centered">
         <h1 className="shizuru pb-5">YOUR DERPIES GALLERY</h1>
-        <h2 className="subtitle">All your derpies in one place!</h2>
+        <h2 className="subtitle custom-mobile-subtitle">All your derpies in one place!</h2>
 
         {noMetaMaskDetectedError && <MetamaskWarning />}
 
