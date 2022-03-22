@@ -31,77 +31,16 @@ const About = ({ setSelectedTab }) => {
       <section className="section has-text-centered pb-0 container">
         <h1 className="shizuru pb-6">ABOUT</h1>
         <h2 className="subtitle pb-6 mb-0 custom-smaller-mobile-text">
-          Whoopsie Derpies is an NFT art collection deployed to the Ethereum <strong>Rinkeby</strong> Testnet. Inspired
-          by drawing animals for our twin toddlers whilst getting bumped around and receiving conflicting requests. The
-          animals are cute and just a little bit derpy. View minted collection on{" "}
-          <a href="https://testnets.opensea.io/collection/whoopsiederpies" target="_blank">
-            Opensea (rinkeby testnet)
-          </a>
-          .
+          At Mystery, we're not only giving back directly and proportionally to our holders, we're giving those who may not have the means to move markets an opportunity at doing so. Through our Mystery Box giveaways, we're raising the bar for giving back to the community. This allows us to simultaneously should our full appreciation for our hodlers while giving Mystery real use-case.
+          Mystery Box order of operations are simple: upon buying into the giveaway using Mystery tokens, you're afforded the opportunity to unlock some of the biggest prizes crypto has ever seen.
+          Because Mystery is looking out for every one of it's hodlers, no Mystery Box buyer leaves empty handed: Flights, hotel stays, sporting event tickets, and crypto make up just a few of our giveaways.
         </h2>
 
-        <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6 custom-mobile-margin">
+/*        <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6 custom-mobile-margin">
           <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Beaver} />
           </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Bunny} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cheetah} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Elephant} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Flamingo} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Fox} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Giraffe} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Hedgie} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Horse} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Lemur} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Llama} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Narwhal} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Octopus} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Orca} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Pig} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Rhino} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Sandpiper} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Shark} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Squirrel} />
-          </figure>
-        </div>
+        </div> */
       </section>
 
       <section className="section pt-0">
