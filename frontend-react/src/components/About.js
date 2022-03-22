@@ -19,7 +19,7 @@ const About = ({ setSelectedTab }) => {
 
        <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6 custom-mobile-margin">
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Beaver} />
+            <img src={MysterBox} />
           </figure>
         </div>
       </section>
