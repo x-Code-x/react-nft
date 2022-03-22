@@ -28,7 +28,7 @@ const About = ({ setSelectedTab }) => {
         <div className="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
           <div>
             <figure className="image custom-about-img">
-              <img src={Cheetah} />
+              <img src={Beaver} />
             </figure>
           </div>
           <div className="custom-about-text p-5">
@@ -77,7 +77,7 @@ const About = ({ setSelectedTab }) => {
           </div>
           <div>
             <figure className="image custom-about-img">
-              <img src={Hedgie} />
+              <img src={Beaver} />
             </figure>
           </div>
         </div>
