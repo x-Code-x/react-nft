@@ -4,10 +4,7 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url("./img/blob-1.svg"); */
-  /* background-repeat: no-repeat; */
-  /* min-height: 100vh; */
-  /* min-width: 100vw; */
+  background-color: #355A20
 }
 
 code {
