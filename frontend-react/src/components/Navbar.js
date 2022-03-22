@@ -21,7 +21,7 @@ const Navbar = (props) => {
             <img className="" src={Logo} />
           </figure>
           <a className="navbar-item shizuru is-size-3 is-size-4-mobile" onClick={logoClickHandler}>
-            <span className="">WhoopsieDerpies</span>
+            <span className="">Mystery Boxes</span>
           </a>
 
           <button
