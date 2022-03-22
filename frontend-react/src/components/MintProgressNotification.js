@@ -10,10 +10,10 @@ const MintProgressNotification = ({ mintWaitTimer, setSelectedTab, transactionHa
   return (
     <div className="notification is-primary is-light container mt-5">
       <p className="mb-3">
-        Please wait while your transaction is processed by the ethereum rinkeby network. You can view your pending
-        transaction on etherscan here:{" "}
-        <a className="custom-word-wrap" href={`https://rinkeby.etherscan.io/tx/${transactionHash}`} target="_blank">
-          https://rinkeby.etherscan.io/tx/{transactionHash}
+        Please wait while your transaction is processed by the BSC Testnet network. You can view your pending
+        transaction on BSC Scan here:{" "}
+        <a className="custom-word-wrap" href={`https://testnet.bscscan.com/tx/${transactionHash}`} target="_blank">
+          https://testnet.bscscan.com/tx/{transactionHash}
         </a>
       </p>
       <p className="mb-3">
@@ -21,11 +21,11 @@ const MintProgressNotification = ({ mintWaitTimer, setSelectedTab, transactionHa
         <a href="https://docs.chain.link/docs/chainlink-vrf/" target="_blank">
           Chainlink VRF
         </a>{" "}
-        to respond to the Derpies contract with a random number. Your new Derpie will show here in:{" "}
+        to respond to the Mystery Box contract with a random number. Your new Mystery Box will show here in:{" "}
         <Countdown date={mintWaitTimer} />
       </p>
       <p>
-        Admire your other Derpies in the <a onClick={galleryClickHandler}>Gallery</a> while you wait!
+        Admire or open your other Mystery Boxes in the <a onClick={galleryClickHandler}>Gallery</a> while you wait!
       </p>
     </div>
   );
