@@ -5,7 +5,7 @@ const MetamaskWarning = () => {
       <a href="https://metamask.io/" target="_blank">
         MetaMask extension
       </a>{" "}
-      installed to interact with Whoopsie Derpies.
+      installed to interact with Myster Box.
     </div>
   );
 };
