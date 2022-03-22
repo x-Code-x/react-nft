@@ -31,7 +31,7 @@ const Mint = (props) => {
   return (
     <div className="background">
       <section className="section has-text-centered">
-        <h1 className="shizuru pb-5">MINT</h1>
+        <h1 className="inter pb-5">GET YOUR MYSTERY BOX!</h1>
         <h2 className="subtitle custom-mobile-subtitle">
           Grab your Mystery Box here! Each Mystery Box costs 0.01 <strong>test</strong> BNB + gas on <strong>BSC Testnet</strong>.
         </h2>
