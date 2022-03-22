@@ -18,18 +18,18 @@ const About = ({ setSelectedTab }) => {
         </h2>
 
        <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6 custom-mobile-margin">
-       //   <figure className="image is-96x96 mr-2 custom-mobile-img">
-       //     <img src={Beaver} />
-       //   </figure>
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
+            <img src={Beaver} />
+          </figure>
         </div>
       </section>
 
       <section className="section pt-0">
         <div className="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
           <div>
-          //  <figure className="image custom-about-img">
-          //    <img src={Cheetah} />
-          //  </figure>
+            <figure className="image custom-about-img">
+              <img src={Cheetah} />
+            </figure>
           </div>
           <div className="custom-about-text p-5">
             <h1 className="title">More Details</h1>
@@ -76,9 +76,9 @@ const About = ({ setSelectedTab }) => {
             </p>
           </div>
           <div>
-            //<figure className="image custom-about-img">
-            //  <img src={Hedgie} />
-            //</figure>
+            <figure className="image custom-about-img">
+              <img src={Hedgie} />
+            </figure>
           </div>
         </div>
         <div className="is-flex is-justify-content-center">
