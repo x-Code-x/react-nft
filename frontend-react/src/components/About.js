@@ -1,4 +1,4 @@
-import Beaver from "../img/derpie_img/Beaver.png";
+import MysterBox from "../img/Logo.png";
 
 const About = ({ setSelectedTab }) => {
   function mintPageHandler() {
@@ -10,7 +10,7 @@ const About = ({ setSelectedTab }) => {
   return (
     <div className="background">
       <section className="section has-text-centered pb-0 container">
-        <h1 className="shizuru pb-6">ABOUT</h1>
+        <h1 className="inter pb-6">ABOUT</h1>
         <h2 className="subtitle pb-6 mb-0 custom-smaller-mobile-text">
           At Mystery, we're not only giving back directly and proportionally to our holders, we're giving those who may not have the means to move markets an opportunity at doing so. Through our Mystery Box giveaways, we're raising the bar for giving back to the community. This allows us to simultaneously should our full appreciation for our hodlers while giving Mystery real use-case.
           Mystery Box order of operations are simple: upon buying into the giveaway using Mystery tokens, you're afforded the opportunity to unlock some of the biggest prizes crypto has ever seen.
@@ -28,7 +28,7 @@ const About = ({ setSelectedTab }) => {
         <div className="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
           <div>
             <figure className="image custom-about-img">
-              <img src={Beaver} />
+              <img src={MysterBox} />
             </figure>
           </div>
           <div className="custom-about-text p-5">
@@ -77,7 +77,7 @@ const About = ({ setSelectedTab }) => {
           </div>
           <div>
             <figure className="image custom-about-img">
-              <img src={Beaver} />
+              <img src={MysterBox} />
             </figure>
           </div>
         </div>
