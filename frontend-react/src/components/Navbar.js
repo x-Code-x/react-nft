@@ -15,7 +15,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <nav className="navbar has-background-black-ter has-text-white-ter" role="navigation" aria-label="main navigation">
+      <nav className="navbar has-background-black-bis has-text-white-ter" role="navigation" aria-label="main navigation">
         <div className="navbar-brand is-flex is-align-items-center">
           <figure className="image is-64x64 custom-nav-img pl-3 is-flex is-align-items-center">
             <img className="" src={Logo} />
