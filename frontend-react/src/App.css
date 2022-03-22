@@ -4,8 +4,8 @@
   min-height: 100vh;
 }
 
-.shizuru {
-  font-family: "Shizuru", cursive;
+.inter {
+  font-family: "Inter";
   font-size: 3rem;
 }
 
@@ -118,7 +118,7 @@
     width: 70px !important;
   }
 
-  .shizuru {
+  .inter {
     font-size: 2rem;
   }
 }
