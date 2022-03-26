@@ -1,15 +1,15 @@
 import Logo from "../img/Logo.png";
 import Attribute from "./Attribute";
 
-const UserDerpy = ({ derpieDetails }) => {
-  const imgURI = `https://ipfs.io/ipfs/${derpieDetails.uriJSON.image.split("").splice(7).join("")}`;
-  const style = { backgroundColor: `#${derpieDetails.uriJSON.background_color}` };
+const UserMystryBoxes = ({ mysteryBoxDetails }) => {
+  const imgURI = `https://ipfs.io/ipfs/${mysteryBoxDetails.uriJSON.image.split("").splice(7).join("")}`;
+  const style = { backgroundColor: `#${mysteryBoxDetails.uriJSON.background_color}` };
   return (
     <>
       <div className="card custom-card">
         <div className="card-image">
           <figure style={style} className="image is-4by4">
-            <img src={imgURI} alt="Derpie Image" />
+            <img src={imgURI} alt="Mystery Box Image" />
           </figure>
         </div>
         <div className="card-content">
@@ -20,15 +20,15 @@ const UserDerpy = ({ derpieDetails }) => {
               </figure>
             </div>
             <div className="media-left has-text-left">
-              <p className="title is-4 mb-0 is-capitalized">{derpieDetails.uriJSON.name}</p>
-              <p className="">{`Token ID: ${derpieDetails.tokenId}`}</p>
+              <p className="title is-4 mb-0 is-capitalized">{mysteryBoxDetails.uriJSON.name}</p>
+              <p className="">{`Token ID: ${mysteryBoxDetails.tokenId}`}</p>
             </div>
           </div>
 
           <div className="content field is-grouped is-flex">
-            <Attribute derpieDetails={derpieDetails} traitNum={0} />
-            <Attribute derpieDetails={derpieDetails} traitNum={1} />
-            <Attribute derpieDetails={derpieDetails} traitNum={2} />
+            <Attribute mysteryBoxDetails={mysteryBoxDetailsDetails} traitNum={0} />
+            <Attribute mysteryBoxDetails={mysteryBoxDetailsDetails} traitNum={1} />
+            <Attribute mysteryBoxDetails={mysteryBoxDetailsDetails} traitNum={2} />
           </div>
         </div>
       </div>
