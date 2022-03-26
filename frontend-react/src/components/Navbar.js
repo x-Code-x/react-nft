@@ -15,13 +15,13 @@ const Navbar = (props) => {
 
   return (
     <>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav className="navbar has-background-black-bis has-text-white-ter" role="navigation" aria-label="main navigation">
         <div className="navbar-brand is-flex is-align-items-center">
           <figure className="image is-64x64 custom-nav-img pl-3 is-flex is-align-items-center">
             <img className="" src={Logo} />
           </figure>
           <a className="navbar-item inter is-size-3 is-size-4-mobile" onClick={logoClickHandler}>
-            <span className="">Myster Box</span>
+            <span className="">Mystery Boxes</span>
           </a>
 
           <button
@@ -52,7 +52,7 @@ const Navbar = (props) => {
             <a
               className="navbar-item"
               onClick={() => {
-                setSelectedTab("Mint");
+                setSelectedTab("Get Mystery Box!");
                 setIsActive(false);
               }}
             >
@@ -65,7 +65,7 @@ const Navbar = (props) => {
                 setIsActive(false);
               }}
             >
-              Your Derpies
+              Your Mystery Boxes
             </a>
           </div>
           <div className="navbar-item">

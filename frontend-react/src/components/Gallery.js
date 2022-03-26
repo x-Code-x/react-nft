@@ -24,8 +24,8 @@ const Gallery = (props) => {
   return (
     <div className="background">
       <section className="section has-text-centered">
-        <h1 className="shizuru pb-5">YOUR DERPIES GALLERY</h1>
-        <h2 className="subtitle custom-mobile-subtitle">All your derpies in one place!</h2>
+        <h1 className="shizuru pb-5">YOUR MYSTERY BOXES</h1>
+        <h2 className="subtitle custom-mobile-subtitle">All your Mystery Boxes in one place!</h2>
 
         {noMetaMaskDetectedError && <MetamaskWarning />}
 
@@ -39,7 +39,7 @@ const Gallery = (props) => {
 
         {isConnected && (
           <button className={`button mb-4 ${gettingUserDerpies ? "is-loading" : ""}`} onClick={getUserDerpiesHandler}>
-            {userDerpieDetails.length === 0 ? "See Your Derpies" : "Refresh Your Derpies"}
+            {userDerpieDetails.length === 0 ? "See Your Mystery Boxes" : "Refresh Your Mystery Boxes"}
           </button>
         )}
         {showGallery && <UserGallery userDerpieDetails={userDerpieDetails} />}

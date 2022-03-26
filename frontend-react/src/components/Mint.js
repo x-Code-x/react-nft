@@ -31,9 +31,9 @@ const Mint = (props) => {
   return (
     <div className="background">
       <section className="section has-text-centered">
-        <h1 className="inter pb-5">MINT</h1>
+        <h1 className="inter pb-5">REVEAL A MYSTERY BOX</h1>
         <h2 className="subtitle custom-mobile-subtitle">
-          Mint a Mystery Box here! Each Mystery Box costs 0.01 <strong>test</strong> BNB + gas on <strong>BSC Testnet</strong>.
+          Reveal a Mystery Box here! Each Mystery Box costs 0.01 <strong>test</strong> BNB + gas on <strong>BSC Testnet</strong>.
         </h2>
         <p className="custom-smaller-mobile-text">
           Make sure your wallet is connected to the BSC Testnet (network id: 97) and is funded with Test BNB.
@@ -61,8 +61,9 @@ const Mint = (props) => {
             disabled={mintingInProgress}
             onClick={mintDerpieHandler}
           >
-            Reveal a Mystery Box!
-          </button>
+        project-dev-mint-issue
+            Reveal a Mystery Box
+           </button>
         )}
 
         {metamaskWaitingOnUser && <MetaMaskOpen />}
@@ -81,6 +82,7 @@ const Mint = (props) => {
             <>
               <p className="is-size-4 is-uppercase">
                 <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> A new Mystery Box is revealed!{" "}
+
                 <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
               </p>
               <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
