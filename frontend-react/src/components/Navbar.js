@@ -21,7 +21,7 @@ const Navbar = (props) => {
             <img className="" src={Logo} />
           </figure>
           <a className="navbar-item shizuru is-size-3 is-size-4-mobile" onClick={logoClickHandler}>
-            <span className="">Cryptid Crypto</span>
+            <span className="">Project Name</span>
           </a>
 
           <button
