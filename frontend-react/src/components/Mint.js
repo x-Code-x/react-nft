@@ -61,7 +61,7 @@ const Mint = (props) => {
             disabled={mintingInProgress}
             onClick={mintDerpieHandler}
           >
-            Reveal a Mystery Box
+            Reveal a Mystery Box!
           </button>
         )}
 
@@ -80,7 +80,7 @@ const Mint = (props) => {
           {isNewlyMinted && (
             <>
               <p className="is-size-4 is-uppercase">
-                <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> a new Mystery Box is revealed!{" "}
+                <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> A new Mystery Box is revealed!{" "}
                 <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
               </p>
               <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
