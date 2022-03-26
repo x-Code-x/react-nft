@@ -16,7 +16,7 @@ const UserDerpy = ({ derpieDetails }) => {
           <div className="media">
             <div className="media-left">
               <figure className="image is-48x48">
-                <img src={Logo} alt="Whoosie Derpies Logo" />
+                <img src={Logo} alt="Myster Box Logo" />
               </figure>
             </div>
             <div className="media-left has-text-left">
