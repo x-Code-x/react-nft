@@ -20,8 +20,8 @@ const Navbar = (props) => {
           <figure className="image is-64x64 custom-nav-img pl-3 is-flex is-align-items-center">
             <img className="" src={Logo} />
           </figure>
-          <a className="navbar-item shizuru is-size-3 is-size-4-mobile" onClick={logoClickHandler}>
-            <span className="">WhoopsieDerpies</span>
+          <a className="navbar-item inter is-size-3 is-size-4-mobile" onClick={logoClickHandler}>
+            <span className="">Myster Box</span>
           </a>
 
           <button
