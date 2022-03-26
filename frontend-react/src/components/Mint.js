@@ -61,7 +61,7 @@ const Mint = (props) => {
             disabled={mintingInProgress}
             onClick={mintDerpieHandler}
           >
-            Get a Mystery Box!
+            Mint
           </button>
         )}
 
