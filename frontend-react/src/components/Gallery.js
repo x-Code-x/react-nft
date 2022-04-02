@@ -13,7 +13,7 @@ const Gallery = (props) => {
     errorMessageConnect,
     setErrorMessageConnect,
     gettingUserNFT,
-    getUserDerpiesHandler,
+    getUserNFTHandler,
     connectWalletHandler,
     userNFTDetails,
     showGallery,
