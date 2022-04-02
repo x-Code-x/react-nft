@@ -1,4 +1,4 @@
-import FoxMetamask from "../img/metamask.png";
+import FoxMetamask from "../img/metamysterfox2.png";
 
 const MetaMaskButton = ({ isConnecting, connectWalletHandler }) => {
   return (
