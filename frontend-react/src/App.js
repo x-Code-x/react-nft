@@ -83,7 +83,7 @@ function App() {
       if (typeof window.ethereum !== "undefined") {
         const [account] = await window.ethereum.request({ method: "eth_requestAccounts" });
         const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const contract = new ethers.Contract(DERPIES_ADDRESS, Derpies.abi, provider);
+        const contract = new ethers.Contract(NFT_ADDRESS, Derpies.abi, provider);
         const numDerpies = await contract.balanceOf(account);
 
         // to use in below for await
@@ -140,7 +140,7 @@ function App() {
   async function mintDerpie() {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
-    const derpiesContract = new ethers.Contract(DERPIES_ADDRESS, Derpies.abi, signer);
+    const derpiesContract = new ethers.Contract(NFT_ADDRESS, Derpies.abi, signer);
 
     setMetamaskWaitingOnUser(true);
 
@@ -245,7 +245,7 @@ function App() {
 
       if (typeof window.ethereum !== "undefined") {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const contract = new ethers.Contract(DERPIES_ADDRESS, Derpies.abi, provider);
+        const contract = new ethers.Contract(NFT_ADDRESS, Derpies.abi, provider);
 
         const tokenId = parseInt(newlyMintedDerpie.toString());
         const tokenUri = await contract.tokenURI(newlyMintedDerpie);
