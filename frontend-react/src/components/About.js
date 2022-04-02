@@ -1,23 +1,5 @@
-import Beaver from "../img/derpie_img/Beaver.png";
-import Bunny from "../img/derpie_img/Bunny.png";
+// import ImageName from "../img/nft_img/ImageName.png";
 import Cat from "../img/derpie_img/Cat.png";
-import Cheetah from "../img/derpie_img/Cheetah.png";
-import Elephant from "../img/derpie_img/Elephant.png";
-import Flamingo from "../img/derpie_img/Flamingo.png";
-import Fox from "../img/derpie_img/Fox.png";
-import Giraffe from "../img/derpie_img/Giraffe.png";
-import Hedgie from "../img/derpie_img/Hedgie.png";
-import Horse from "../img/derpie_img/Horse.png";
-import Lemur from "../img/derpie_img/Lemur.png";
-import Llama from "../img/derpie_img/Llama.png";
-import Narwhal from "../img/derpie_img/Narwhal.png";
-import Octopus from "../img/derpie_img/Octopus.png";
-import Orca from "../img/derpie_img/Orca.png";
-import Pig from "../img/derpie_img/Pig.png";
-import Rhino from "../img/derpie_img/Rhino.png";
-import Sandpiper from "../img/derpie_img/Sandpiper.png";
-import Shark from "../img/derpie_img/Shark.png";
-import Squirrel from "../img/derpie_img/Squirrel.png";
 
 const About = ({ setSelectedTab }) => {
   function mintPageHandler() {
@@ -29,7 +11,7 @@ const About = ({ setSelectedTab }) => {
   return (
     <div className="background">
       <section className="section has-text-centered pb-0 container">
-        <h1 className="shizuru pb-6">ABOUT</h1>
+        <h1 className="inter pb-6">ABOUT</h1>
         <h2 className="subtitle pb-6 mb-0 custom-smaller-mobile-text">
           Whoopsie Derpies is an NFT art collection deployed to the Ethereum <strong>Rinkeby</strong> Testnet. Inspired
           by drawing animals for our twin toddlers whilst getting bumped around and receiving conflicting requests. The
@@ -42,64 +24,64 @@ const About = ({ setSelectedTab }) => {
 
         <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6 custom-mobile-margin">
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Beaver} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Bunny} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
             <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cheetah} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Elephant} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Flamingo} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Fox} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Giraffe} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Hedgie} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Horse} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Lemur} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Llama} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Narwhal} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Octopus} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Orca} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Pig} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Rhino} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Sandpiper} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Shark} />
+            <img src={Cat} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Squirrel} />
+            <img src={Cat} />
+          </figure>
+          <figure className="image is-96x96 mr-2 custom-mobile-img">
+            <img src={Cat} />
           </figure>
         </div>
       </section>
@@ -108,7 +90,7 @@ const About = ({ setSelectedTab }) => {
         <div className="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
           <div>
             <figure className="image custom-about-img">
-              <img src={Cheetah} />
+              <img src={Cat} />
             </figure>
           </div>
           <div className="custom-about-text p-5">
@@ -160,7 +142,7 @@ const About = ({ setSelectedTab }) => {
           </div>
           <div>
             <figure className="image custom-about-img">
-              <img src={Hedgie} />
+              <img src={Cat} />
             </figure>
           </div>
         </div>
