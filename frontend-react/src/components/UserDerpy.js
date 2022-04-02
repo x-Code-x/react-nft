@@ -2,9 +2,9 @@ import Logo from "../img/Logo.png";
 import Attribute from "./Attribute";
 import { PROJECT_NAME, NETWORK, NFT_NAME } from "../constants";
 
-const UserDerpy = ({ derpieDetails }) => {
-  const imgURI = `https://ipfs.io/ipfs/${derpieDetails.uriJSON.image.split("").splice(7).join("")}`;
-  const style = { backgroundColor: `#${derpieDetails.uriJSON.background_color}` };
+const UserDerpy = ({ nftDetails }) => {
+  const imgURI = `https://ipfs.io/ipfs/${nftDetails.uriJSON.image.split("").splice(7).join("")}`;
+  const style = { backgroundColor: `#${nftDetails.uriJSON.background_color}` };
   return (
     <>
       <div className="card custom-card">
@@ -21,15 +21,15 @@ const UserDerpy = ({ derpieDetails }) => {
               </figure>
             </div>
             <div className="media-left has-text-left">
-              <p className="title is-4 mb-0 is-capitalized">{derpieDetails.uriJSON.name}</p>
-              <p className="">{`Token ID: ${derpieDetails.tokenId}`}</p>
+              <p className="title is-4 mb-0 is-capitalized">{nftDetails.uriJSON.name}</p>
+              <p className="">{`Token ID: ${nftDetails.tokenId}`}</p>
             </div>
           </div>
 
           <div className="content field is-grouped is-flex">
-            <Attribute derpieDetails={derpieDetails} traitNum={0} />
-            <Attribute derpieDetails={derpieDetails} traitNum={1} />
-            <Attribute derpieDetails={derpieDetails} traitNum={2} />
+            <Attribute nftDetails={nftDetails} traitNum={0} />
+            <Attribute nftDetails={nftDetails} traitNum={1} />
+            <Attribute nftDetails={nftDetails} traitNum={2} />
           </div>
         </div>
       </div>
