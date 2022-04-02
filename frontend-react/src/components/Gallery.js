@@ -3,6 +3,7 @@ import MetaMaskButton from "./MetaMaskButton";
 import NoDerpiesNotification from "./NoDerpiesNotification";
 import ErrorMessage from "./ErrorMessage";
 import MetamaskWarning from "./MetamaskWarning";
+import { PROJECT_NAME, NFT_NAME } from "../constants";
 
 const Gallery = (props) => {
   const {
@@ -24,8 +25,8 @@ const Gallery = (props) => {
   return (
     <div className="background">
       <section className="section has-text-centered">
-        <h1 className="shizuru pb-5">YOUR DERPIES GALLERY</h1>
-        <h2 className="subtitle custom-mobile-subtitle">All your derpies in one place!</h2>
+        <h1 className="inter pb-5">YOUR {NFT_NAME} GALLERY</h1>
+        <h2 className="subtitle custom-mobile-subtitle">All your {NFT_NAME)s in one place!</h2>
 
         {noMetaMaskDetectedError && <MetamaskWarning />}
 
