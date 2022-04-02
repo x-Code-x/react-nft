@@ -9,3 +9,4 @@ export const CHAINLINK_WAIT_TIME_MINUTES = 0.5 * MINUTES_TO_MILLISECONDS;
 
 export const PROJECT_NAME = "Project Name"
 export const NETWORK = "BSC Testnet"
+export const NFT_NAME = "NFT_NAME"
