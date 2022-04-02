@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Logo from "../img/Logo.png";
-import { PROJECT_NAME } from "../constants";
+import { PROJECT_NAME, NFT_NAME } from "../constants";
 
 const Navbar = (props) => {
   const { setSelectedTab, connectedAccount, connectedNetwork } = props;
@@ -66,7 +66,7 @@ const Navbar = (props) => {
                 setIsActive(false);
               }}
             >
-              Your Derpies
+              Your {NFT_NAME}
             </a>
           </div>
           <div className="navbar-item">
