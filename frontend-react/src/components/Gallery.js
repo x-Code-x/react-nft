@@ -1,6 +1,6 @@
 import UserGallery from "./UserGallery";
 import MetaMaskButton from "./MetaMaskButton";
-import NoDerpiesNotification from "./NoDerpiesNotification";
+import NoBoxesNotification from "./NoBoxesNotification";
 import ErrorMessage from "./ErrorMessage";
 import MetamaskWarning from "./MetamaskWarning";
 
@@ -11,10 +11,10 @@ const Gallery = (props) => {
     isConnected,
     errorMessageConnect,
     setErrorMessageConnect,
-    gettingUserDerpies,
-    getUserDerpiesHandler,
+    gettingUserBoxes,
+    getUserBoxesHandler,
     connectWalletHandler,
-    userDerpieDetails,
+    userBoxesDetails,
     showGallery,
     setShowGallery,
     errorMessageFetch,
@@ -24,7 +24,7 @@ const Gallery = (props) => {
   return (
     <div className="background">
       <section className="section has-text-centered">
-        <h1 className="shizuru pb-5">YOUR MYSTERY BOXES</h1>
+        <h1 className="inter pb-5">YOUR MYSTERY BOXES</h1>
         <h2 className="subtitle custom-mobile-subtitle">All your Mystery Boxes in one place!</h2>
 
         {noMetaMaskDetectedError && <MetamaskWarning />}
@@ -38,12 +38,12 @@ const Gallery = (props) => {
         )}
 
         {isConnected && (
-          <button className={`button mb-4 ${gettingUserDerpies ? "is-loading" : ""}`} onClick={getUserDerpiesHandler}>
-            {userDerpieDetails.length === 0 ? "See Your Mystery Boxes" : "Refresh Your Mystery Boxes"}
+          <button className={`button mb-4 ${gettingUserBoxes ? "is-loading" : ""}`} onClick={getUserBoxesHandler}>
+            {userBoxesDetails.length === 0 ? "See Your Mystery Boxes" : "Refresh Your Mystery Boxes"}
           </button>
         )}
-        {showGallery && <UserGallery userDerpieDetails={userDerpieDetails} />}
-        {showGallery && userDerpieDetails.length === 0 && <NoDerpiesNotification setShowGallery={setShowGallery} />}
+        {showGallery && <UserGallery userBoxesDetails={userBoxesDetails} />}
+        {showGallery && userBoxesDetails.length === 0 && <NoBoxesNotification setShowGallery={setShowGallery} />}
         {errorMessageGallery !== null && (
           <ErrorMessage errorMessage={errorMessageGallery} setErrorMessage={setErrorMessageGallery} />
         )}
