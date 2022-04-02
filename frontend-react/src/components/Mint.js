@@ -50,105 +50,107 @@ const Mint = (props) => {
       <section className="section has-text-centered">
         <div class="tile is-ancestor">
           <div class="tile">
-                    {noMetaMaskDetectedError && <MetamaskWarning />}
+            <p>BNB Mystery Box</p>
+            {noMetaMaskDetectedError && <MetamaskWarning />}
 
-        {!isConnected && !noMetaMaskDetectedError && (
-          <MetaMaskButton isConnecting={isConnecting} connectWalletHandler={connectWalletHandler} />
-        )}
+            {!isConnected && !noMetaMaskDetectedError && (
+            <MetaMaskButton isConnecting={isConnecting} connectWalletHandler={connectWalletHandler} />
+            )}
 
-        {errorMessageConnect && (
-          <ErrorMessage errorMessage={errorMessageConnect} setErrorMessage={setErrorMessageConnect} />
-        )}
+            {errorMessageConnect && (
+            <ErrorMessage errorMessage={errorMessageConnect} setErrorMessage={setErrorMessageConnect} />
+            )}
 
-        {isConnected && (
-          <button
-            className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`}
-            disabled={mintingInProgress}
-            onClick={mintNFTHandler}
-          >
-            Mint a {NFT_NAME}
-          </button>
-        )}
+            {isConnected && (
+              <button
+                className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`}
+                disabled={mintingInProgress}
+                onClick={mintNFTHandler}
+              >
+                Mint a {NFT_NAME}
+              </button>
+            )}
 
-        {metamaskWaitingOnUser && <MetaMaskOpen />}
-        {mintingInProgress && (
-          <MintProgressNotification
-            mintWaitTimer={mintWaitTimer}
-            setSelectedTab={setSelectedTab}
-            transactionHash={transactionHash}
-          />
-        )}
-        {errorMessageMint !== null && (
-          <ErrorMessage errorMessage={errorMessageMint} setErrorMessage={setErrorMessageMint} />
-        )}
-        <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
-          {isNewlyMinted && (
-            <>
-              <p className="is-size-4 is-uppercase">
-                <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> a new {NFT_NAME} is born!{" "}
-                <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
-              </p>
-              <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
-                {isNewlyMinted && <UserDerpy nftDetails={mintedNFTDetails} />}
-              </div>
-              <p className="is-size-7 pt-3">Transaction Hash:</p>
-              <p className="is-size-7">{transactionHash}</p>
-            </>
-          )}
+            {metamaskWaitingOnUser && <MetaMaskOpen />}
+            {mintingInProgress && (
+              <MintProgressNotification
+                mintWaitTimer={mintWaitTimer}
+                setSelectedTab={setSelectedTab}
+                transactionHash={transactionHash}
+              />
+            )}
+            {errorMessageMint !== null && (
+              <ErrorMessage errorMessage={errorMessageMint} setErrorMessage={setErrorMessageMint} />
+            )}
+            <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
+              {isNewlyMinted && (
+                <>
+                  <p className="is-size-4 is-uppercase">
+                    <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> a new {NFT_NAME} is born!{" "}
+                    <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
+                  </p>
+                  <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
+                    {isNewlyMinted && <UserDerpy nftDetails={mintedNFTDetails} />}
+                  </div>
+                  <p className="is-size-7 pt-3">Transaction Hash:</p>
+                  <p className="is-size-7">{transactionHash}</p>
+                </>
+              )}
+            </div>
+          </div>
+          <div class="tile">
+            <p>$MYST Mystery Box</p>
+            {noMetaMaskDetectedError && <MetamaskWarning />}
+
+            {!isConnected && !noMetaMaskDetectedError && (
+              <MetaMaskButton isConnecting={isConnecting} connectWalletHandler={connectWalletHandler} />
+            )}
+
+            {errorMessageConnect && (
+              <ErrorMessage errorMessage={errorMessageConnect} setErrorMessage={setErrorMessageConnect} />
+            )}
+
+            {isConnected && (
+              <button
+                className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`}
+                disabled={mintingInProgress}
+                onClick={mintNFTHandler}
+              >
+                Mint a {NFT_NAME}
+              </button>
+            )}
+
+            {metamaskWaitingOnUser && <MetaMaskOpen />}
+            {mintingInProgress && (
+              <MintProgressNotification
+                mintWaitTimer={mintWaitTimer}
+                setSelectedTab={setSelectedTab}
+                transactionHash={transactionHash}
+              />
+            )}
+            {errorMessageMint !== null && (
+              <ErrorMessage errorMessage={errorMessageMint} setErrorMessage={setErrorMessageMint} />
+            )}
+            <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
+              {isNewlyMinted && (
+                <>
+                  <p className="is-size-4 is-uppercase">
+                    <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> a new {NFT_NAME} is born!{" "}
+                    <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
+                  </p>
+                  <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
+                    {isNewlyMinted && <UserDerpy nftDetails={mintedNFTDetails} />}
+                  </div>
+                  <p className="is-size-7 pt-3">Transaction Hash:</p>
+                  <p className="is-size-7">{transactionHash}</p>
+                </>
+              )}
+            </div>
+          </div>
         </div>
       </div>
-      <div class="tile">
-        {noMetaMaskDetectedError && <MetamaskWarning />}
-
-        {!isConnected && !noMetaMaskDetectedError && (
-          <MetaMaskButton isConnecting={isConnecting} connectWalletHandler={connectWalletHandler} />
-        )}
-
-        {errorMessageConnect && (
-          <ErrorMessage errorMessage={errorMessageConnect} setErrorMessage={setErrorMessageConnect} />
-        )}
-
-        {isConnected && (
-          <button
-            className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`}
-            disabled={mintingInProgress}
-            onClick={mintNFTHandler}
-          >
-            Mint a {NFT_NAME}
-          </button>
-        )}
-
-        {metamaskWaitingOnUser && <MetaMaskOpen />}
-        {mintingInProgress && (
-          <MintProgressNotification
-            mintWaitTimer={mintWaitTimer}
-            setSelectedTab={setSelectedTab}
-            transactionHash={transactionHash}
-          />
-        )}
-        {errorMessageMint !== null && (
-          <ErrorMessage errorMessage={errorMessageMint} setErrorMessage={setErrorMessageMint} />
-        )}
-        <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
-          {isNewlyMinted && (
-            <>
-              <p className="is-size-4 is-uppercase">
-                <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> a new {NFT_NAME} is born!{" "}
-                <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
-              </p>
-              <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
-                {isNewlyMinted && <UserDerpy nftDetails={mintedNFTDetails} />}
-              </div>
-              <p className="is-size-7 pt-3">Transaction Hash:</p>
-              <p className="is-size-7">{transactionHash}</p>
-            </>
-          )}
-        </div>
-      </div>
-        </div>
-        </div>
-      </section>
-    </div>
+    </section>
+  </div>
   );
 };
 
