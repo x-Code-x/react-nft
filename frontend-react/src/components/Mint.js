@@ -38,12 +38,12 @@ const Mint = (props) => {
         </h2>
         <p className="custom-smaller-mobile-text">
           Make sure your wallet is connected to the {NETWORK} (Network ID: {NETWORK_ID}) and is funded with {NETWORK} 
-          test tokens.
+           tokens.
         </p>
         <p className="custom-smaller-mobile-text">
           You can get test tokens from a faucet. Try this one:{" "}
-          <a href="https://faucets.chain.link/rinkeby" target="_blank">
-            https://faucets.chain.link/rinkeby
+          <a href="https://testnet.binance.org/faucet-smart" target="_blank">
+            https://testnet.binance.org/faucet-smart
           </a>
         </p>
 
