@@ -1,4 +1,4 @@
-const NoDerpiesNotification = ({ setShowGallery }) => {
+const NoBoxesNotification = ({ setShowGallery }) => {
   return (
     <div className="notification is-danger is-light container mt-5">
       <button className="delete" onClick={() => setShowGallery(false)}></button>
@@ -7,4 +7,4 @@ const NoDerpiesNotification = ({ setShowGallery }) => {
   );
 };
 
-export default NoDerpiesNotification;
+export default NoBoxesNotification;
