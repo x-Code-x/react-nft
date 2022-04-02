@@ -1,11 +1,11 @@
-import UserDerpy from "./UserDerpy";
+import UserDerpy from "./UserBoxes";
 
-const UserGallery = ({ userDerpieDetails }) => {
+const UserGallery = ({ userBoxesDetails }) => {
   return (
     <>
       <div className="is-flex is-justify-content-center is-flex-wrap-wrap custom-gallery-gap">
-        {userDerpieDetails.map((derpie, index) => (
-          <UserDerpy key={index} derpieDetails={derpie} />
+        {userBoxesDetails.map((box, index) => (
+          <UserBoxes key={index} boxDetails={derpie} />
         ))}
       </div>
     </>
