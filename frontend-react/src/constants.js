@@ -7,7 +7,7 @@ export const VRFCOORDINATORMOCK_ADDRESS_LOCALHOST = process.env.REACT_APP_VRFCOO
 const MINUTES_TO_MILLISECONDS = 60 * 1000;
 export const CHAINLINK_WAIT_TIME_MINUTES = 0.5 * MINUTES_TO_MILLISECONDS;
 
-export const PROJECT_NAME = "Project Name"
+export const PROJECT_NAME = "Myster Box"
 export const NETWORK = "BSC Testnet"
 export const NETWORK_ID = "97"
-export const NFT_NAME = "NFT_NAME"
+export const NFT_NAME = "Mystery Box"
