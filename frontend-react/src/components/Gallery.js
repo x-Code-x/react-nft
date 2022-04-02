@@ -1,6 +1,6 @@
 import UserGallery from "./UserGallery";
 import MetaMaskButton from "./MetaMaskButton";
-import NoDerpiesNotification from "./NoDerpiesNotification";
+import NoNFTNotification from "./NoNFTNotification";
 import ErrorMessage from "./ErrorMessage";
 import MetamaskWarning from "./MetamaskWarning";
 import { PROJECT_NAME, NFT_NAME } from "../constants";
