@@ -1,5 +1,6 @@
 import Logo from "../img/Logo.png";
 import Attribute from "./Attribute";
+import { PROJECT_NAME, NETWORK, NFT_NAME } from "../constants";
 
 const UserDerpy = ({ derpieDetails }) => {
   const imgURI = `https://ipfs.io/ipfs/${derpieDetails.uriJSON.image.split("").splice(7).join("")}`;
@@ -9,14 +10,14 @@ const UserDerpy = ({ derpieDetails }) => {
       <div className="card custom-card">
         <div className="card-image">
           <figure style={style} className="image is-4by4">
-            <img src={imgURI} alt="Derpie Image" />
+            <img src={imgURI} alt="{NFT_NAME} Image" />
           </figure>
         </div>
         <div className="card-content">
           <div className="media">
             <div className="media-left">
               <figure className="image is-48x48">
-                <img src={Logo} alt="Whoosie Derpies Logo" />
+                <img src={Logo} alt="{PROJECT_NAME} Logo" />
               </figure>
             </div>
             <div className="media-left has-text-left">
