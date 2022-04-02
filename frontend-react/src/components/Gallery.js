@@ -39,12 +39,12 @@ const Gallery = (props) => {
         )}
 
         {isConnected && (
-          <button className={`button mb-4 ${gettingUserDerpies ? "is-loading" : ""}`} onClick={getUserDerpiesHandler}>
-            {userDerpieDetails.length === 0 ? "See Your {NFT_NAME}s" : "Refresh Your {NFT_NAME}s"}
+          <button className={`button mb-4 ${gettingUserNFT ? "is-loading" : ""}`} onClick={getUserNFTHandler}>
+            {userNFTDetails.length === 0 ? "See Your {NFT_NAME}s" : "Refresh Your {NFT_NAME}s"}
           </button>
         )}
-        {showGallery && <UserGallery userDerpieDetails={userDerpieDetails} />}
-        {showGallery && userDerpieDetails.length === 0 && <NoNFTNotification setShowGallery={setShowGallery} />}
+        {showGallery && <UserGallery userNFTDetails={userNFTDetails} />}
+        {showGallery && userNFTDetails.length === 0 && <NoNFTNotification setShowGallery={setShowGallery} />}
         {errorMessageGallery !== null && (
           <ErrorMessage errorMessage={errorMessageGallery} setErrorMessage={setErrorMessageGallery} />
         )}
