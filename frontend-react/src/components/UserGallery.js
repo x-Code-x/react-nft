@@ -1,11 +1,11 @@
 import UserDerpy from "./UserDerpy";
 
-const UserGallery = ({ userDerpieDetails }) => {
+const UserGallery = ({ userNFTDetails }) => {
   return (
     <>
       <div className="is-flex is-justify-content-center is-flex-wrap-wrap custom-gallery-gap">
-        {userDerpieDetails.map((derpie, index) => (
-          <UserDerpy key={index} nftDetails={derpie} />
+        {userNFTDetails.map((nft, index) => (
+          <UserDerpy key={index} nftDetails={nft} />
         ))}
       </div>
     </>
