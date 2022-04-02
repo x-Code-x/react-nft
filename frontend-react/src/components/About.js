@@ -1,5 +1,5 @@
 import Image from "../img/nft_img/Image.png";
-import PROJECT_NAME from "../constants.js";
+import PROJECT_NAME from "../constants";
 
 const About = ({ setSelectedTab }) => {
   function mintPageHandler() {
