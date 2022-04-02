@@ -34,7 +34,7 @@ const Mint = (props) => {
       <section className="section has-text-centered">
         <h1 className="inter pb-5">MINT</h1>
         <h2 className="subtitle custom-mobile-subtitle">
-          Mint a {NFT_NAME} here! Each {NFT_NAME} costs 0.01 <strong>test</strong> ETH + gas on <strong>{NETWORK}</strong>.
+          Mint a {NFT_NAME} here! Each {NFT_NAME} costs 0.01 <strong>test</strong> BNB + gas on <strong>{NETWORK}</strong>.
         </h2>
         <p className="custom-smaller-mobile-text">
           Make sure your wallet is connected to the {NETWORK} (Network ID: {NETWORK_ID}) and is funded with {NETWORK} 
