@@ -44,7 +44,7 @@ const Gallery = (props) => {
           </button>
         )}
         {showGallery && <UserGallery userDerpieDetails={userDerpieDetails} />}
-        {showGallery && userDerpieDetails.length === 0 && <NoDerpiesNotification setShowGallery={setShowGallery} />}
+        {showGallery && userDerpieDetails.length === 0 && <NoNFTNotification setShowGallery={setShowGallery} />}
         {errorMessageGallery !== null && (
           <ErrorMessage errorMessage={errorMessageGallery} setErrorMessage={setErrorMessageGallery} />
         )}
