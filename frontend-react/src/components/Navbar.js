@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Logo from "../img/Logo.png";
+import { PROJECT_NAME } from "../constants";
 
 const Navbar = (props) => {
   const { setSelectedTab, connectedAccount, connectedNetwork } = props;
@@ -21,7 +22,7 @@ const Navbar = (props) => {
             <img className="" src={Logo} />
           </figure>
           <a className="navbar-item shizuru is-size-3 is-size-4-mobile" onClick={logoClickHandler}>
-            <span className="">Project Name</span>
+            <span className="">{PROJECT_NAME}</span>
           </a>
 
           <button
