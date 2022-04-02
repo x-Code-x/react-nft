@@ -26,7 +26,7 @@ const Gallery = (props) => {
     <div className="background">
       <section className="section has-text-centered">
         <h1 className="inter pb-5">YOUR {NFT_NAME} GALLERY</h1>
-        <h2 className="subtitle custom-mobile-subtitle">All your {NFT_NAME)s in one place!</h2>
+        <h2 className="subtitle custom-mobile-subtitle">All your {NFT_NAME}s in one place!</h2>
 
         {noMetaMaskDetectedError && <MetamaskWarning />}
 
@@ -40,7 +40,7 @@ const Gallery = (props) => {
 
         {isConnected && (
           <button className={`button mb-4 ${gettingUserDerpies ? "is-loading" : ""}`} onClick={getUserDerpiesHandler}>
-            {userDerpieDetails.length === 0 ? "See Your Derpies" : "Refresh Your Derpies"}
+            {userDerpieDetails.length === 0 ? "See Your Derpies" : "Refresh Your {NFT_NAME}s"}
           </button>
         )}
         {showGallery && <UserGallery userDerpieDetails={userDerpieDetails} />}
