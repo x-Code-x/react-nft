@@ -40,7 +40,7 @@ const Gallery = (props) => {
 
         {isConnected && (
           <button className={`button mb-4 ${gettingUserDerpies ? "is-loading" : ""}`} onClick={getUserDerpiesHandler}>
-            {userDerpieDetails.length === 0 ? "See Your Derpies" : "Refresh Your {NFT_NAME}s"}
+            {userDerpieDetails.length === 0 ? "See Your {NFT_NAME}s" : "Refresh Your {NFT_NAME}s"}
           </button>
         )}
         {showGallery && <UserGallery userDerpieDetails={userDerpieDetails} />}
