@@ -1,5 +1,4 @@
-// import ImageName from "../img/nft_img/ImageName.png";
-import Cat from "../img/derpie_img/Cat.png";
+import Image from "../img/nft_img/Image.png";
 
 const About = ({ setSelectedTab }) => {
   function mintPageHandler() {
@@ -24,64 +23,64 @@ const About = ({ setSelectedTab }) => {
 
         <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6 custom-mobile-margin">
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Cat} />
+            <img src={Image} />
           </figure>
         </div>
       </section>
@@ -90,7 +89,7 @@ const About = ({ setSelectedTab }) => {
         <div className="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
           <div>
             <figure className="image custom-about-img">
-              <img src={Cat} />
+              <img src={Image} />
             </figure>
           </div>
           <div className="custom-about-text p-5">
@@ -142,7 +141,7 @@ const About = ({ setSelectedTab }) => {
           </div>
           <div>
             <figure className="image custom-about-img">
-              <img src={Cat} />
+              <img src={Image} />
             </figure>
           </div>
         </div>
