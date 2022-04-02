@@ -8,7 +8,7 @@ import About from "./components/About";
 import Mint from "./components/Mint";
 import Gallery from "./components/Gallery";
 import AccountChangedWarning from "./components/AccountChangedWarning";
-import RinkebyWarning from "./components/RinkebyWarning";
+import NetworkWarning from "./components/NetworkWarning";
 import { PROJECT_NAME, NFT_ADDRESS, DERPIES_ADDRESS, VRFCOORDINATORMOCK_ADDRESS_LOCALHOST, CHAINLINK_WAIT_TIME_MINUTES } from "./constants";
 
 // import Derpies from "./contracts/localhost/Derpies.json"; // development
@@ -24,7 +24,7 @@ function App() {
   const [isConnecting, setIsConnecting] = useState(false);
   const [connectedAccount, setConnectedAccount] = useState("not connected");
   const [connectedNetwork, setConnectedNetwork] = useState("none");
-  const [rinkebyWarning, setRinkebyWarning] = useState(false);
+  const [networkWarning, setNetworkWarning] = useState(false);
   const [chainChanged, setChainChanged] = useState(false);
   const [accountChanged, setAccountChanged] = useState(false);
 
@@ -62,10 +62,10 @@ function App() {
         setConnectedAccount(`${account.slice(0, 4)}...${account.slice(-4)}`);
         setConnectedNetwork(network);
         setIsConnected(true);
-        if (network !== "4") {
-          setRinkebyWarning(true);
+        if (network !== "97") { // Hardcoded - have to fix this
+          setNetworkWarning(true);
         } else {
-          setRinkebyWarning(false);
+          setNetworkWarning(false);
         }
       } catch (error) {
         // console.log(`${error.code} ${error.message}`);
@@ -268,7 +268,7 @@ function App() {
     <>
       <Navbar setSelectedTab={setSelectedTab} connectedNetwork={connectedNetwork} connectedAccount={connectedAccount} />
 
-      {rinkebyWarning && <RinkebyWarning />}
+      {networkWarning && <NetworkWarning />}
       {chainChanged && <ChainChangedWarning />}
       {accountChanged && <AccountChangedWarning />}
 
