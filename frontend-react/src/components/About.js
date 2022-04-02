@@ -1,4 +1,6 @@
 import Image from "../img/nft_img/Image.png";
+import Myster from "../img/myster-beta-tone.png";
+import Logo from "../img/Logo.png";
 import { PROJECT_NAME, NETWORK, NFT_NAME } from "../constants";
 
 const About = ({ setSelectedTab }) => {
@@ -31,64 +33,16 @@ const About = ({ setSelectedTab }) => {
 
         <div className="is-flex is-flex-wrap-wrap is-justify-content-center mb-6 custom-mobile-margin">
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
+            <img src={Myster} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
+            <img src={Logo} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
+            <img src={Logo} />
           </figure>
           <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
-          </figure>
-          <figure className="image is-96x96 mr-2 custom-mobile-img">
-            <img src={Image} />
+            <img src={Myster} />
           </figure>
         </div>
       </section>
@@ -97,7 +51,7 @@ const About = ({ setSelectedTab }) => {
         <div className="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
           <div>
             <figure className="image custom-about-img">
-              <img src={Image} />
+              <img src={Myster} />
             </figure>
           </div>
           <div className="custom-about-text p-5">
@@ -142,7 +96,7 @@ const About = ({ setSelectedTab }) => {
           </div>
           <div>
             <figure className="image custom-about-img">
-              <img src={Image} />
+              <img src={Logo} />
             </figure>
           </div>
         </div>
