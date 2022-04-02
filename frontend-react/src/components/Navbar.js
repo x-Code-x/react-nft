@@ -66,7 +66,7 @@ const Navbar = (props) => {
                 setIsActive(false);
               }}
             >
-              Your {NFT_NAME}s
+              Your {NFT_NAME}es
             </a>
           </div>
           <div className="navbar-item">
