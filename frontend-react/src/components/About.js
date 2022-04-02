@@ -13,8 +13,16 @@ const About = ({ setSelectedTab }) => {
       <section className="section has-text-centered pb-0 container">
         <h1 className="inter pb-6">ABOUT</h1>
         <h2 className="subtitle pb-6 mb-0 custom-smaller-mobile-text">
-          {PROJECT_NAME} is an NFT art collection deployed to the <strong>{NETWORK}</strong>. Your cool project description
-          goes here. View minted collection on{" "}
+          {PROJECT_NAME} is an NFT project deployed to the <strong>{NETWORK}</strong>.
+          At {PROJECT_NAME}, we're not only giving back directly and proportionally to our holders, we're giving those who may not 
+          have the means to move markets an opportunity at doing so. Through our {NFT_NAME} giveaways, we're raising the 
+          bar for giving back to the community. This allows us to simultaneously show our full appreciation for our hodlers 
+          while giving {PROJECT_NAME} real use-case.
+          {PROJECT_NAME} order of operations are simple: upon buying into the giveaway using {PROJECT_NAME} tokens, you're afforded 
+          the opportunity to unlock some of the biggest prizes crypto has ever seen.
+          Because {PROJECT_NAME} is looking out for every one of it's hodlers, no {NFT_NAME} buyer leaves empty 
+          handed: Flights, hotel stays, sporting event tickets, and crypto make up just a few of our giveaways.
+          View minted collection on{" "}
           <a href="https://testnets.opensea.io/collection/whoopsiederpies" target="_blank">
             Some Platform ({NETWORK})
           </a>
@@ -93,19 +101,9 @@ const About = ({ setSelectedTab }) => {
             </figure>
           </div>
           <div className="custom-about-text p-5">
-            <h1 className="title">Development Details</h1>
+            <h1 className="title">More Details</h1>
             <p className="pb-2 custom-smaller-mobile-text">
-              This is an independent project to showcase familiarity with the Ethereum ecosystem, including Solidity,
-              the Hardhat development environment, and oracles. The website frontend was developed using React. View the
-              entire project code at this
-              <a href="https://github.com/nmfretz" target="_blank">
-                {" "}
-                github repository.
-              </a>{" "}
-               Inspired by the work of
-              <a href="https://github.com/nmfretz" target="_blank">
-                {" "} guy who's awesome.
-              </a>{" "}
+              More stuff here.
               Verified smart contract code is also viewable on {NETWORK}{" "}
               <a href="https://rinkeby.etherscan.io/address/0xFae806Ef5fDadCBa0db4716228EC625d1FC64196" target="_blank">
                 here
