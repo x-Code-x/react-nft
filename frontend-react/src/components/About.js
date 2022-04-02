@@ -128,7 +128,7 @@ const About = ({ setSelectedTab }) => {
 
         <div className="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
           <div className="custom-about-text p-5">
-            <h1 className="title">Derpies Details</h1>
+            <h1 className="title">{NFT_NAME} Details</h1>
             <p className="pb-2 custom-smaller-mobile-text">
               A total of (n) {NFT_NAME} can be minted on-chain. There are (n) unique {NFT_NAME}s that it is possible to
               mint: Class Names go here.
