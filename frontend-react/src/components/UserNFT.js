@@ -2,7 +2,7 @@ import Logo from "../img/Logo.png";
 import Attribute from "./Attribute";
 import { PROJECT_NAME, NETWORK, NFT_NAME } from "../constants";
 
-const UserDerpy = ({ nftDetails }) => {
+const UserNFT = ({ nftDetails }) => {
   const imgURI = `https://ipfs.io/ipfs/${nftDetails.uriJSON.image.split("").splice(7).join("")}`;
   const style = { backgroundColor: `#${nftDetails.uriJSON.background_color}` };
   return (
@@ -37,4 +37,4 @@ const UserDerpy = ({ nftDetails }) => {
   );
 };
 
-export default UserDerpy;
+export default UserNFT;
