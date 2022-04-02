@@ -86,7 +86,7 @@ const Mint = (props) => {
                 <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
               </p>
               <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
-                {isNewlyMinted && <UserDerpy derpieDetails={mintedDerpieDetails} />}
+                {isNewlyMinted && <UserDerpy nftDetails={mintedDerpieDetails} />}
               </div>
               <p className="is-size-7 pt-3">Transaction Hash:</p>
               <p className="is-size-7">{transactionHash}</p>
