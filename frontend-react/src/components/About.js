@@ -1,5 +1,5 @@
 import Image from "../img/nft_img/Image.png";
-import { PROJECT_NAME, NETWORK } from "../constants";
+import { PROJECT_NAME, NETWORK, NFT_NAME } from "../constants";
 
 const About = ({ setSelectedTab }) => {
   function mintPageHandler() {
@@ -102,18 +102,21 @@ const About = ({ setSelectedTab }) => {
                 {" "}
                 github repository.
               </a>{" "}
-              Verified smart contract code is also viewable on Rinkeby Etherscan{" "}
+               Inspired by the work of <a href="https://github.com/nmfretz" target="_blank">
+                {" "}.
+              </a>{" "}
+              Verified smart contract code is also viewable on {NETWORK}{" "}
               <a href="https://rinkeby.etherscan.io/address/0xFae806Ef5fDadCBa0db4716228EC625d1FC64196" target="_blank">
                 here
               </a>
               .
             </p>
             <p className="pb-2 custom-smaller-mobile-text">
-              The Whoospie Derpies smart contract follows the ERC721 Non-Fungible Token Standard. Development details
+              The {PROJECT_NAME} smart contract follows the ERC1155 Non-Fungible Token Standard. Development details
               are as follows:
             </p>
             <ul className="custom-details-list custom-smaller-mobile-text">
-              <li>Inherits from OpenZeppelin's ERC721Enumerable and Ownable interfaces.</li>
+              <li>Inherits from OpenZeppelin's ERC1155Enumerable and Ownable interfaces.</li>
               <li>
                 Inherits from Chainlink's VRFConsumerBase to obtain verifiable random numbers on-chain and assign a
                 random animal with the result.
@@ -127,12 +130,11 @@ const About = ({ setSelectedTab }) => {
           <div className="custom-about-text p-5">
             <h1 className="title">Derpies Details</h1>
             <p className="pb-2 custom-smaller-mobile-text">
-              A total of 500 Whoopsie Derpies can be minted on-chain. There are 20 unique animals that are possible to
-              mint: Beaver, Bunny, Cat, Cheetah, Elephant, Flamingo, Fox, Giraffe, Hedgehog, Horse, Lemur, Llama,
-              Narwhal, Octopus, Orca, Pig, Rhino, Sandpiper, Shark, and Squirrel.
+              A total of (n) {NFT_NAME} can be minted on-chain. There are (n) unique {NFT_NAME}s that it is possible to
+              mint: Class Names go here.
             </p>
             <p>
-              The specific animal you mint is determined during the minting process, using{" "}
+              The specific {NFT_NAME} you mint is determined during the minting process, using{" "}
               <a href="https://docs.chain.link/docs/chainlink-vrf/" target="_blank">
                 Chainlink's VRF
               </a>{" "}
@@ -147,7 +149,7 @@ const About = ({ setSelectedTab }) => {
         </div>
         <div className="is-flex is-justify-content-center">
           <button className="button" onClick={mintPageHandler}>
-            Ready to Mint a Whoospie Derpie?
+            Ready to Mint a {NFT_NAME}?
           </button>
         </div>
       </section>
