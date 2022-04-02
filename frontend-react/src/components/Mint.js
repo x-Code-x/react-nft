@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-import UserDerpy from "./UserDerpy";
+import UserBoxes from "./UserBoxes";
 import MetamaskWarning from "./MetamaskWarning";
 import MintProgressNotification from "./MintProgressNotification";
 import ErrorMessage from "./ErrorMessage";
@@ -16,14 +16,14 @@ const Mint = (props) => {
     isConnected,
     errorMessageConnect,
     setErrorMessageConnect,
-    mintDerpieHandler,
+    mintBoxHandler,
     metamaskWaitingOnUser,
     mintingInProgress,
     mintWaitTimer,
     setSelectedTab,
     transactionHash,
     isNewlyMinted,
-    mintedDerpieDetails,
+    mintedBoxDetails,
     errorMessageMint,
     setErrorMessageMint,
   } = props;
@@ -59,7 +59,7 @@ const Mint = (props) => {
           <button
             className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`}
             disabled={mintingInProgress}
-            onClick={mintDerpieHandler}
+            onClick={mintBoxHandler}
           >
                 Reveal a Mystery Box
            </button>
@@ -85,7 +85,7 @@ const Mint = (props) => {
                 <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
               </p>
               <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
-                {isNewlyMinted && <UserDerpy derpieDetails={mintedDerpieDetails} />}
+                {isNewlyMinted && <UserBoxes boxDetails={mintedBoxDetails} />}
               </div>
               <p className="is-size-7 pt-3">Transaction Hash:</p>
               <p className="is-size-7">{transactionHash}</p>
