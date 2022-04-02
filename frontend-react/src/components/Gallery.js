@@ -1,6 +1,6 @@
 import UserGallery from "./UserGallery";
 import MetaMaskButton from "./MetaMaskButton";
-import NoBoxesNotification from "./NoBoxesNotification";
+import NoNFTNotification from "./NoNFTNotification";
 import ErrorMessage from "./ErrorMessage";
 import MetamaskWarning from "./MetamaskWarning";
 
@@ -43,7 +43,7 @@ const Gallery = (props) => {
           </button>
         )}
         {showGallery && <UserGallery userBoxDetails={userBoxDetails} />}
-        {showGallery && userBoxDetails.length === 0 && <NoBoxesNotification setShowGallery={setShowGallery} />}
+        {showGallery && userBoxDetails.length === 0 && <NoNFTNotification setShowGallery={setShowGallery} />}
         {errorMessageGallery !== null && (
           <ErrorMessage errorMessage={errorMessageGallery} setErrorMessage={setErrorMessageGallery} />
         )}
