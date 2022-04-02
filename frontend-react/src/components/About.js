@@ -1,6 +1,6 @@
 import Image from "../img/nft_img/Image.png";
-import Myster from "../img/myster-beta-tone.png";
-import Logo from "../img/Logo.png";
+import Myster from "../img/nft_img/baby-myster-beta-tone.png";
+import Logo from "../img//nft_img/Logo.png";
 import { PROJECT_NAME, NETWORK, NFT_NAME } from "../constants";
 
 const About = ({ setSelectedTab }) => {
