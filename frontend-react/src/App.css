@@ -1,11 +1,16 @@
 .background {
-  background: url(./img/background.svg) no-repeat center center fixed;
+  /* background: url(./img/background.svg) no-repeat center center fixed; */
   background-size: cover;
   min-height: 100vh;
 }
 
 .shizuru {
   font-family: "Shizuru", cursive;
+  font-size: 3rem;
+}
+
+.inter {
+  font-family: "Inter";
   font-size: 3rem;
 }
 
@@ -119,6 +124,10 @@
   }
 
   .shizuru {
+    font-size: 2rem;
+  }
+  
+  .inter {
     font-size: 2rem;
   }
 }
