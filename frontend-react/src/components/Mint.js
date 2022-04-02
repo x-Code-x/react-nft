@@ -7,6 +7,7 @@ import MintProgressNotification from "./MintProgressNotification";
 import ErrorMessage from "./ErrorMessage";
 import MetaMaskOpen from "./MetaMaskOpen";
 import MetaMaskButton from "./MetaMaskButton";
+import { PROJECT_NAME, NETWORK, NFT_NAME } from "../constants";
 
 const Mint = (props) => {
   const {
@@ -31,7 +32,7 @@ const Mint = (props) => {
   return (
     <div className="background">
       <section className="section has-text-centered">
-        <h1 className="shizuru pb-5">MINT</h1>
+        <h1 className="inter pb-5">MINT</h1>
         <h2 className="subtitle custom-mobile-subtitle">
           Mint a Derpie here! Each Derpie costs 0.01 <strong>test</strong> ETH + gas on <strong>Rinkeby</strong>.
         </h2>
