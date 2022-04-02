@@ -34,14 +34,14 @@ const Mint = (props) => {
       <section className="section has-text-centered">
         <h1 className="inter pb-5">MINT</h1>
         <h2 className="subtitle custom-mobile-subtitle">
-          Mint a Derpie here! Each Derpie costs 0.01 <strong>test</strong> ETH + gas on <strong>Rinkeby</strong>.
+          Mint a {NFT_NAME} here! Each {NFT_NAME} costs 0.01 <strong>test</strong> ETH + gas on <strong>{NETWORK}</strong>.
         </h2>
         <p className="custom-smaller-mobile-text">
-          Make sure your wallet is connected to the Rinkeby Ethereum Testnet (network id: 4) and is funded with Rinkeby
-          test ether.
+          Make sure your wallet is connected to the {NETWORK} (network id: 4) and is funded with {NETWORK}
+          test tokens.
         </p>
         <p className="custom-smaller-mobile-text">
-          You can get test ether from a faucet. Try this one:{" "}
+          You can get test tokens from a faucet. Try this one:{" "}
           <a href="https://faucets.chain.link/rinkeby" target="_blank">
             https://faucets.chain.link/rinkeby
           </a>
@@ -82,7 +82,7 @@ const Mint = (props) => {
           {isNewlyMinted && (
             <>
               <p className="is-size-4 is-uppercase">
-                <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> a new derpie is born!{" "}
+                <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3 " icon={faStar} /> a new {NFT_NAME} is born!{" "}
                 <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
               </p>
               <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
