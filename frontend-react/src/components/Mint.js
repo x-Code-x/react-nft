@@ -17,14 +17,14 @@ const Mint = (props) => {
     isConnected,
     errorMessageConnect,
     setErrorMessageConnect,
-    mintDerpieHandler,
+    mintNFTHandler,
     metamaskWaitingOnUser,
     mintingInProgress,
     mintWaitTimer,
     setSelectedTab,
     transactionHash,
     isNewlyMinted,
-    mintedDerpieDetails,
+    mintedNFTDetails,
     errorMessageMint,
     setErrorMessageMint,
   } = props;
@@ -61,7 +61,7 @@ const Mint = (props) => {
           <button
             className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`}
             disabled={mintingInProgress}
-            onClick={mintDerpieHandler}
+            onClick={mintNFTHandler}
           >
             Mint a {NFT_NAME}
           </button>
@@ -86,7 +86,7 @@ const Mint = (props) => {
                 <FontAwesomeIcon className="fas fa-2x fa-solid is-size-3" icon={faStar} />
               </p>
               <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mt-4">
-                {isNewlyMinted && <UserDerpy nftDetails={mintedDerpieDetails} />}
+                {isNewlyMinted && <UserDerpy nftDetails={mintedNFTDetails} />}
               </div>
               <p className="is-size-7 pt-3">Transaction Hash:</p>
               <p className="is-size-7">{transactionHash}</p>
