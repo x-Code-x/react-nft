@@ -48,6 +48,14 @@ const Mint = (props) => {
         </p>
       </section>
       <section className="section has-text-centered">
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <p>Tile 1</p>
+          </div>
+          <div class="tile">
+            <p>Tile 2</p>
+          </div>
+        </div>
         {noMetaMaskDetectedError && <MetamaskWarning />}
 
         {!isConnected && !noMetaMaskDetectedError && (
