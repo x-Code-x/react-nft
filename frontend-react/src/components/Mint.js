@@ -64,10 +64,12 @@ const Mint = (props) => {
              )}
 
              {isConnected && (
-               <p>{Logo}</p>
-               <button className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`} disabled={mintingInProgress} onClick={mintNFTHandler}>
-                 Mint a {NFT_NAME}
-               </button>
+               <div>
+                <p>{Logo}</p>
+                <button className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`} disabled={mintingInProgress} onClick={mintNFTHandler}>
+                   Mint a {NFT_NAME}
+                </button>
+               </div>
              )}
 
              {metamaskWaitingOnUser && <MetaMaskOpen />}
@@ -112,10 +114,12 @@ const Mint = (props) => {
               )}
 
               {isConnected && (
-                <p>{Logo}</p>
-                <button className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`} disabled={mintingInProgress} onClick={mintNFTHandler}>
-                  Mint a {NFT_NAME}
-                </button>
+                <div>
+                  <p>{Logo}</p>
+                  <button className={`button mt-4 mb-4 ${metamaskWaitingOnUser ? "is-loading" : ""}`} disabled={mintingInProgress} onClick={mintNFTHandler}>
+                    Mint a {NFT_NAME}
+                  </button>
+                </div>
               )}
 
               {metamaskWaitingOnUser && <MetaMaskOpen />}
