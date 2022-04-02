@@ -43,6 +43,10 @@ module.exports = {
       url: `${process.env.INFURA_URL_RINKEBY}`,
       accounts: [`0x${process.env.PRIVATE_KEY_RINKEBY}`],
     },
+    bsctest: {
+      url: `${process.env.MORALIS_URL_BSCTEST}`,
+      // accounts: [`0x${process.env.PRIVATE_KEY_BSCTEST}`],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -50,5 +54,8 @@ module.exports = {
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_TOKEN_RINKEBY,
+  },
+  bscscan: {
+    apiKey: process.env.ETHERSCAN_TOKEN_BSC,
   },
 };
