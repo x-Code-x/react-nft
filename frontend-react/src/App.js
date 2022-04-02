@@ -9,7 +9,7 @@ import Mint from "./components/Mint";
 import Gallery from "./components/Gallery";
 import AccountChangedWarning from "./components/AccountChangedWarning";
 import RinkebyWarning from "./components/RinkebyWarning";
-import { DERPIES_ADDRESS, VRFCOORDINATORMOCK_ADDRESS_LOCALHOST, CHAINLINK_WAIT_TIME_MINUTES } from "./constants";
+import { PROJECT_NAME, NFT_ADDRESS, DERPIES_ADDRESS, VRFCOORDINATORMOCK_ADDRESS_LOCALHOST, CHAINLINK_WAIT_TIME_MINUTES } from "./constants";
 
 // import Derpies from "./contracts/localhost/Derpies.json"; // development
 import Derpies from "./contracts/rinkeby/Derpies.json"; // deployment
