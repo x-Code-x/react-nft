@@ -39,7 +39,7 @@ const Gallery = (props) => {
 
         {isConnected && (
           <button className={`button mb-4 ${gettingUserBoxes ? "is-loading" : ""}`} onClick={getUserBoxHandler}>
-            {userBoxesDetails.length === 0 ? "See Your Mystery Boxes" : "Refresh Your Mystery Boxes"}
+            {userBoxDetails.length === 0 ? "See Your Mystery Boxes" : "Refresh Your Mystery Boxes"}
           </button>
         )}
         {showGallery && <UserGallery userBoxDetails={userBoxDetails} />}
