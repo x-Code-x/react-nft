@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-import UserDerpy from "./UserDerpy";
+import UserNFT from "./UserNFT";
 import MetamaskWarning from "./MetamaskWarning";
 import MintProgressNotification from "./MintProgressNotification";
 import ErrorMessage from "./ErrorMessage";
