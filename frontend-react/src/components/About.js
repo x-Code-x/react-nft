@@ -1,5 +1,5 @@
 import Image from "../img/nft_img/Image.png";
-import { PROJECT_NAME } from "../constants";
+import { PROJECT_NAME, NETWORK } from "../constants";
 
 const About = ({ setSelectedTab }) => {
   function mintPageHandler() {
@@ -13,11 +13,10 @@ const About = ({ setSelectedTab }) => {
       <section className="section has-text-centered pb-0 container">
         <h1 className="inter pb-6">ABOUT</h1>
         <h2 className="subtitle pb-6 mb-0 custom-smaller-mobile-text">
-          {PROJECT_NAME} is an NFT art collection deployed to the Ethereum <strong>Rinkeby</strong> Testnet. Inspired
-          by drawing animals for our twin toddlers whilst getting bumped around and receiving conflicting requests. The
-          animals are cute and just a little bit derpy. View minted collection on{" "}
+          {PROJECT_NAME} is an NFT art collection deployed to the <strong>{NETWORK}</strong>. Your cool project description
+          goes here. View minted collection on{" "}
           <a href="https://testnets.opensea.io/collection/whoopsiederpies" target="_blank">
-            Opensea (rinkeby testnet)
+            Some Platform ({NETWORK})
           </a>
           .
         </h2>
