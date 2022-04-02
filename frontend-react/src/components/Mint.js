@@ -37,7 +37,7 @@ const Mint = (props) => {
           Mint a {NFT_NAME} here! Each {NFT_NAME} costs 0.01 <strong>test</strong> ETH + gas on <strong>{NETWORK}</strong>.
         </h2>
         <p className="custom-smaller-mobile-text">
-          Make sure your wallet is connected to the {NETWORK} (network id: 4) and is funded with {NETWORK}
+          Make sure your wallet is connected to the {NETWORK} (network id: 97) and is funded with {NETWORK} 
           test tokens.
         </p>
         <p className="custom-smaller-mobile-text">
