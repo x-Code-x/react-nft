@@ -50,7 +50,7 @@ const Mint = (props) => {
       </section>
       <section className="section has-text-centered">
         <div class="tile is-ancestor">
-          <div class="tile is-6 is-parent">
+          <div class="tile is-parent">
             <div class="tile is-child is-fluid is-max-desktop box">
               <p class="title">BNB Mystery Box</p>
               {noMetaMaskDetectedError && <MetamaskWarning />}
@@ -99,8 +99,6 @@ const Mint = (props) => {
                 )}
              </div>
             </div>
-          </div>
-          <div class="tile is-parent">
             <div class="tile is-child is-fluid is-max-desktop box">
               <p class="title">$MYST Mystery Box</p>
               {noMetaMaskDetectedError && <MetamaskWarning />}
