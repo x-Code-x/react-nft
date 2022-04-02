@@ -12,9 +12,9 @@ const Gallery = (props) => {
     errorMessageConnect,
     setErrorMessageConnect,
     gettingUserBoxes,
-    getUserBoxesHandler,
+    getUserBoxHandler,
     connectWalletHandler,
-    userBoxesDetails,
+    userBoxDetails,
     showGallery,
     setShowGallery,
     errorMessageFetch,
@@ -38,12 +38,12 @@ const Gallery = (props) => {
         )}
 
         {isConnected && (
-          <button className={`button mb-4 ${gettingUserBoxes ? "is-loading" : ""}`} onClick={getUserBoxesHandler}>
+          <button className={`button mb-4 ${gettingUserBoxes ? "is-loading" : ""}`} onClick={getUserBoxHandler}>
             {userBoxesDetails.length === 0 ? "See Your Mystery Boxes" : "Refresh Your Mystery Boxes"}
           </button>
         )}
-        {showGallery && <UserGallery userBoxesDetails={userBoxesDetails} />}
-        {showGallery && userBoxesDetails.length === 0 && <NoBoxesNotification setShowGallery={setShowGallery} />}
+        {showGallery && <UserGallery userBoxDetails={userBoxDetails} />}
+        {showGallery && userBoxDetails.length === 0 && <NoBoxesNotification setShowGallery={setShowGallery} />}
         {errorMessageGallery !== null && (
           <ErrorMessage errorMessage={errorMessageGallery} setErrorMessage={setErrorMessageGallery} />
         )}
