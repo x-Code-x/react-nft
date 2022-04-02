@@ -8,6 +8,7 @@ import ErrorMessage from "./ErrorMessage";
 import MetaMaskOpen from "./MetaMaskOpen";
 import MetaMaskButton from "./MetaMaskButton";
 import { PROJECT_NAME, NETWORK, NETWORK_ID, NFT_NAME } from "../constants";
+import Logo from "../img/nft-img/Logo.png";
 
 const Mint = (props) => {
   const {
