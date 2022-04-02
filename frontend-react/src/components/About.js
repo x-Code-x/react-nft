@@ -102,8 +102,9 @@ const About = ({ setSelectedTab }) => {
                 {" "}
                 github repository.
               </a>{" "}
-               Inspired by the work of <a href="https://github.com/nmfretz" target="_blank">
-                {" "}.
+               Inspired by the work of
+              <a href="https://github.com/nmfretz" target="_blank">
+                {" "} guy who's awesome.
               </a>{" "}
               Verified smart contract code is also viewable on {NETWORK}{" "}
               <a href="https://rinkeby.etherscan.io/address/0xFae806Ef5fDadCBa0db4716228EC625d1FC64196" target="_blank">
