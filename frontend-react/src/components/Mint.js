@@ -63,7 +63,7 @@ const Mint = (props) => {
             disabled={mintingInProgress}
             onClick={mintDerpieHandler}
           >
-            Mint a Whoospie Derpie
+            Mint a {NFT_NAME}
           </button>
         )}
 
