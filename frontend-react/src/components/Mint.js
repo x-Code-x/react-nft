@@ -46,7 +46,8 @@ const Mint = (props) => {
             https://testnet.binance.org/faucet-smart
           </a>
         </p>
-
+      </section>
+      <section className="section has-text-centered">
         {noMetaMaskDetectedError && <MetamaskWarning />}
 
         {!isConnected && !noMetaMaskDetectedError && (
