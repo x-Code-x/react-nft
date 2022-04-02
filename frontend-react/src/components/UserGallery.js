@@ -5,7 +5,7 @@ const UserGallery = ({ userDerpieDetails }) => {
     <>
       <div className="is-flex is-justify-content-center is-flex-wrap-wrap custom-gallery-gap">
         {userDerpieDetails.map((derpie, index) => (
-          <UserDerpy key={index} derpieDetails={derpie} />
+          <UserDerpy key={index} nftDetails={derpie} />
         ))}
       </div>
     </>
